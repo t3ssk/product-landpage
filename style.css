@@ -552,7 +552,8 @@ button {
     
     .fa-angle-double-right {
 
-       left: 250px;
+
+       text-align: end;
     
     
     }
