@@ -217,15 +217,14 @@ footer {
 }
 
 footer .adresa {
-    line-height: 0rem;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
 
 
 }
 
-footer .adresa span {
-    margin-left: 40px;
-}
+
 /*4. Elementy*/
 button.primary {
     margin:0;
@@ -542,7 +541,7 @@ button {
 
 }
 
-@media screen and (max-width: 500px)  {
+@media screen and (max-width: 600px)  {
     .vyjadreni {
         width: 200px;
     }
