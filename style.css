@@ -181,7 +181,6 @@ nav a, footer a {
 .hodnoceni h2 {
     text-decoration: underline;
     text-decoration-color: #ffffff;
-    text-decoration-thickness: 5px;
 }
 
 .zakaznici {
@@ -543,10 +542,34 @@ button {
 
 }
 
-@media screen and (max-width: 400px)  {
+@media screen and (max-width: 500px)  {
     .vyjadreni {
         width: 200px;
     }
+    .fa-angle-double-right, .fa-angle-double-left {
+        font-size: 2rem;
+        padding: 70px 0px 70px 0px;
+        margin-top: 10%;
+    }
+    
+    .fa-angle-double-right {
+
+       margin-left: 70%;
+    
+    
+    }
+    
+    .fa-angle-double-left {
+        margin-left: 0%;
+    }
+    .zakaznici {
+        display: flex;
+        overflow-x: auto;
+        justify-content: flex-start;
+        width: 80%;
+        margin-left: 65px;
+    }
+    
 }
 
 
