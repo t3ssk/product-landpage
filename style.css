@@ -569,6 +569,13 @@ button {
         width: 80%;
         margin-left: 65px;
     }
+    .jm-foto .foto {
+        width: 30%;
+        height: 30%;
+    }
+    .zakaznici{
+        font-size: 0.7rem;
+    }
     
 }
 
