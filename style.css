@@ -181,7 +181,7 @@ nav a, footer a {
 .hodnoceni h2 {
     text-decoration: underline;
     text-decoration-color: #ffffff;
-    text-decoration-thickness: 20px;
+    text-decoration-thickness: 5px;
 }
 
 .zakaznici {
@@ -541,6 +541,12 @@ button {
         width: 300px;
     }
 
+}
+
+@media screen and (max-width: 400px)  {
+    .vyjadreni {
+        width: 200px;
+    }
 }
 
 
