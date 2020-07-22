@@ -1,0 +1,563 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/*
+Obsah:
+
+1. Global styles
+2. Typografie
+3. Oddíly
+4. Elementy
+5. Media Queries
+*/
+
+
+/*1. Global styles */
+body{
+    height: 100vh;
+    margin: 0 auto;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #585858;
+    box-shadow: inset 0px -9px 0px 0px rgba(239,187,187,1);
+}
+
+
+
+/*2. Typografie*/
+body, textarea{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+.logo {
+    font-family: 'Merriweather', serif;
+    font-size: 1.2rem;
+}
+
+.logo p {
+    font-weight: 300;
+}
+
+.logo span {
+    font-weight: 900;
+}
+.page-hero-text h1{
+    font-weight: 100;
+    font-size: 2rem;
+}
+label {
+    font-weight: 600;
+}
+ p {
+    color: #797979;
+}
+h2 {
+    text-align: center;
+}
+.moznosti h3 {
+    font-weight: 200;
+}
+/*3. Oddíly*/
+header {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    border-bottom: 1px solid #e2e0df;
+    padding-bottom: 10px;
+    position: fixed;
+    background-color: white;
+    color: #292929;
+    z-index: 10;
+
+}
+
+header .logo {
+    width: 10%;
+    display: inline-flex;
+    margin-top: 3px;
+
+} 
+header .logo #logo {
+    height: 34px;
+}
+
+header .logo #logo img{
+    width: 100%;
+
+}
+
+.logo p, header .logo span {
+    position: relative;
+    margin-top: 8px;
+    
+    
+}
+
+
+nav {
+    padding-right: 20px;
+}
+nav ul li, footer ul li{
+display: inline;
+padding-left: 10px;
+}
+
+nav a, footer a {
+    text-decoration: none;
+    color: #585858;
+}
+
+
+.mobile {
+    display: none;
+}
+
+.page-hero {
+    position: relative;
+    width: 50%;
+    height: 600px;
+    top: 15%;
+    left: 10%;
+    background-image: url(./imgs/il_1588xN.1644621472_eqi0.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.page-hero-text {
+    position: absolute;
+    width: 30%;
+    top: 400px;
+    left: 50%;
+    background-color: hsla(23, 7%, 48%, 0.2) ;
+    padding: 30px;
+    backdrop-filter: blur(2rem);
+}
+
+.moznosti {
+    position: relative;
+    top: 40px;
+    width: 95%;
+    margin:auto;
+}
+
+.moznostiSubclass {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.moznost {
+    margin-top: 60px;
+    width: 15%;
+    padding: 0px 20px 40px 20px;
+    text-align: center;
+    border: 1px solid rgb(226, 224, 224);
+    border-radius: 3px;
+    background-color: rgba(204, 202, 202, 0.212);
+}
+.mostnost p {
+    text-align: justify;
+}
+.moznost h3{
+    background-color: #81864454;
+    border: 1px solid #80864465;
+    border-radius: 3px 3px 0px 0px ;
+    width: 100%;
+    padding: 8px 20px 8px 20px;
+    margin: -1px 0 0 -21px;
+    text-align: center;
+}
+
+.hodnoceni {
+    background-color: #e0b599;
+    margin-top: 80px;
+    padding: 40px;
+}
+.hodnoceni h2 {
+    text-decoration: underline;
+    text-decoration-color: #ffffff;
+    text-decoration-thickness: 20px;
+}
+
+.zakaznici {
+    display: flex;
+    overflow-x: auto;
+    justify-content: flex-start;
+    width: 80%;
+    margin-left: 85px;
+}
+.vyjadreni {
+    width: 400px;
+    flex-shrink: 0;
+    background-color: white;
+    box-shadow: 3px 2px 35px -13px rgba(0,0,0,0.6);
+    padding: 20px;
+    margin: 40px;
+}
+.vyjadreni img {
+    width: 100px;
+    margin-right: 50px;
+}
+
+
+.jm-foto {
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    text-align: center;
+    border-top: solid 1px rgb(219, 219, 219);
+    margin-top: 40px;
+    padding-bottom: 10px;
+}
+
+footer .adresa {
+    line-height: 0rem;
+    text-align: center;
+
+
+}
+
+footer .adresa span {
+    margin-left: 40px;
+}
+/*4. Elementy*/
+button.primary {
+    margin:0;
+    width: 100%;
+    height: 3rem;
+    font-weight: 100;
+    border-radius: 15px;
+    border: none;
+    background-color: #5C4238;
+    color: white;
+}
+button.primary:hover {
+    background-color: #362721;
+
+}
+
+button.secondary{
+    height: 2.2rem;
+    font-weight: 100;
+    color: white;
+    background-color: #D08A55;
+    border-radius: 3px;
+    border: none;
+    text-transform: uppercase;
+}
+
+button.secondary:hover {
+    background-color: #c58351;
+
+}
+
+.fa-angle-double-right, .fa-angle-double-left {
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0.596);
+    position: absolute;
+    background-color: #e1b39bab;
+    padding: 170px 0px 70px 0px;
+    margin-top: -30px;
+
+}
+
+.fa-angle-double-right {
+   margin-left: 85%;
+
+
+}
+
+.fa-angle-double-left {
+    margin-left: 0%;
+}
+
+
+.vyhody {
+    position: relative;
+    margin-top: 10%;
+    text-align: center;
+}
+
+.vyhodicky {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.vyhoda i {
+    font-size: 3rem;
+    color: #5c4238;
+}
+.vyhoda {
+    width: 20%;
+    background-color: hsla(	0, 62%, 84%, 0.1);
+    padding: 20px 40px 30px 40px;
+    border-radius: 10px;
+}
+.fa-book{
+    margin-top: 10px;
+    color: #5c423894;
+}
+.books {
+    font-size: 3rem;
+}
+.bookm {
+    font-size: 4rem;
+}
+.bookl{
+    font-size: 5rem;
+}
+
+.galerie {
+    background-color: #D08A55;
+    display: flex;
+    overflow-x: auto;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 350px;
+    margin-top:40px;
+    scroll-snap-align: start;
+}
+
+.galerie img {
+    height: 250px;
+    width: auto;
+    filter: grayscale(100%) brightness(105%)
+    contrast(120%);
+    box-shadow: 3px 2px 35px -13px rgba(0,0,0,0.6);
+    border-bottom: 50px solid white;
+    margin: 20px;
+    border-left: 10px solid white;
+    border-right: 10px solid white;
+    border-top: 10px solid white;
+}
+
+.galerie img:hover {
+    filter: grayscale(0%) brightness(105%)
+    contrast(120%);
+}
+
+.galerie img {
+    transition: filter 200ms ease-in;
+}
+.kontakt {
+    margin-top: 80px;
+}
+.kontaktujte {
+    width: 100%;
+}
+textarea {
+    width: 90%;
+    margin-left: 5%;
+    border: 1px solid rgb(233, 232, 232);
+}
+
+.name-mail {
+    width: 90%;
+    display: flex;
+    margin-left: 5%;
+}
+
+.name, .mail {
+    width: 40%;
+    margin: 10px;
+
+}
+input {
+    height: 2rem;
+    width: 100%;
+    border: 1px solid rgb(233, 232, 232);
+}
+button {
+    margin-top: 28px;
+    margin-left: 10px;
+    width: 40%;
+}
+
+.mobilniKontakt {
+    display:none;
+}
+
+/*5. Media Queries*/
+@media screen and (max-width: 600px) {
+    nav {
+        padding-right: 10px;
+        padding-top: 10px;
+    }
+
+    nav .desktop{
+        display: none;
+    }
+
+    .mobile {
+        display:block;
+        padding-right: 10px;
+        padding-top: 10px;
+        color: #585858;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    nav ul li {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;   
+        background-color: white;
+        border-bottom: 1px solid #e2e0df; 
+        width: 100%;
+
+      }
+     a:hover {
+        box-shadow: inset 0px -9px 0px 0px white;
+      }
+     .page-hero {
+         top: -150px;
+     }
+     .page-hero-text{
+         top: 230px;
+         width: 40%;
+         margin-left: -100px;
+     }
+
+      .page-hero-text h1 {
+          font-size: 1.4rem;
+      }
+      .page-hero-text p {
+          font-size: 0.8rem;
+          color: rgb(49, 49, 49);
+
+      }
+      .vyhody{
+          font-size: 0.8rem;
+          top: -100px;
+          width: 100%;
+          text-align: center;
+          margin: auto;
+      }
+      .vyhodicky{
+        width: 100%;
+    }
+      .vyhoda {
+        width: 100%;
+        border-radius: 0;
+        font-size: 1rem;
+        margin-left: 0;
+    }
+    .galerie {
+        margin-top: -80px;
+    }
+
+
+    .mobilniKontakt{
+        display: block;
+        width: 100%;
+        text-align: center;
+    
+    }
+
+    .mobilniKontakt i{
+        margin-top: 20px;
+        font-size: 6rem;
+        color: #D08A55;
+    }
+    .mobilniKontakt i:hover{
+
+        color: #c07f4e;
+    }
+
+}
+@media screen and (max-width: 1000px) {
+    .page-hero {
+        top: 0px;
+    }
+    .page-hero {
+        top: 60px;
+        width: 60%;
+        height: 400px;
+    }
+    .page-hero-text{
+        top: 35%;
+        padding: 15px;
+        width: 50%;
+        left: 290px;
+        background-color: hsla(0, 7%, 90%, 0.3) ;
+        backdrop-filter: blur(0.5rem);
+    }
+    .vyhody {
+        margin-top: 20%;
+    }
+    .moznost {
+        width: 25%;
+        justify-content: space-between;
+    }
+
+    .galerie {
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .page-hero-text{
+        left: 240px;
+    }
+
+    .vyhody {
+        margin-top: 200px;
+    }
+    .vyhodicky{
+        display: block;
+        text-align: center;
+    }
+    .vyhoda {
+        width: 100%;
+        padding: 20px 0px 30px 0px;
+        font-size: 0.8em;
+        border-radius: 0px;
+    }
+    .vyhodamiddle {
+        background-color: white;
+    }
+    .moznosti{
+       top: 20px;
+    }
+    .moznostiSubclass {
+        display: block;
+        margin: auto;
+    }
+
+    .moznost {
+        width: 70%;
+        margin: 30px auto;
+    }
+    .vyjadreni {
+        width: 300px;
+    }
+
+}
+
+
+
+.noise {
+	position: relative;
+	z-index: 1;
+	}
+		
+.noise:before, .body-noise:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background-image: url(data:image/png;base64,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);
+
+	}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Adventure book land page</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myLinks");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+                let y = document.getElementsById('mobileNav');
+                y.style.display = "none";
+              }
+            }
+
+            </script>
+        <script src="https://kit.fontawesome.com/63f73e08c9.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+    <header>
+        <div class = "logo">
+            <img src="imgs/logo.png" alt="website logo" id="logo"> 
+            <p><span>Adventure</span>book</p>
+        </div>
+        <nav>
+            <ul class = "desktop" id="myLinks">
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="#">E-shop</a></li>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="#"><i class="far fa-user"></i></a></li>
+                <li><a href="#"><i class="fas fa-shopping-basket"></i></a></li>
+
+            </ul>
+            <div class="mobile">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fas fa-bars" id="mobileNav"></i></a>
+
+                </p>
+            </div>
+        </nav>
+    </header>
+    <body>
+  <div class="page-hero"></div>
+  <div class="page-hero-text">
+      <h1>Deník pro dobrodruhy</h1>
+      <p>Díky tomuto deníku začnete žít život takový, jaký jste si vždy přáli. Objevte, kam až sahá vaše odvaha. </p>
+      <button class="primary">KUP ZDE</button>
+  </div>
+<div class="vyhody">
+    <h2>Výhody tohoto produktu</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor!</p>
+    <div class="vyhodicky">
+        <div class="vyhoda">
+            <i class="far fa-check-circle"></i>
+            <h3>Benefit 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla. Enim nec dui nunc mattis enim ut tellus.</p>
+        </div>
+        <div class="vyhoda vyhodamiddle">
+            <i class="far fa-check-circle"></i>
+            <h3>Benefit 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla. Enim nec dui nunc mattis enim ut tellus.</p>
+        </div>
+        <div class="vyhoda">
+            <i class="far fa-check-circle"></i>
+            <h3>Benefit 3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla. Enim nec dui nunc mattis enim ut tellus.</p>
+        </div>
+       
+    </div>
+</div>
+<div class = "galerie noise">
+    <img src="./imgs/il_1588xN.1779503197_e0x0.jpg" alt="product photo">
+   <img src="imgs/il_794xN.1682222849_hmzn.jpg" alt="product photo">
+   <img src="imgs/il_794xN.1839694518_mulu.jpg" alt="product photo">
+    
+</div>
+<div class="moznosti">
+    <div class="moznosti nadpis">
+        <h2>Vyberte si velikost</h2>
+    </div>
+    <div class="moznostiSubclass">
+        <div class="moznost">
+            <h3>Velikost S</h3>
+            <i class="fas fa-book books"></i>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla. Enim nec dui nunc mattis enim ut tellus.</p>
+            <button class="primary">Přidat do košíku</button>
+        </div>
+        <div class="moznost">
+            <h3>Velikost M</h3>
+            <i class="fas fa-book bookm"></i>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla. Enim nec dui nunc mattis enim ut tellus.</p>
+            <button class="primary">Přidat do košíku</button>
+        </div>
+        <div class="moznost">
+            <h3>Velikost L</h3>
+            <i class="fas fa-book bookl"></i>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla. Enim nec dui nunc mattis enim ut tellus.</p>
+            <button class="primary">Přidat do košíku</button>
+        </div>
+    </div>
+</div>
+
+<div class="hodnoceni">
+    <h2>Hodnocení spokojených zákazníků</h2>
+    <i class="fas fa-angle-double-left"></i>
+    <div class = "zakaznici">
+    <div class="vyjadreni">
+        <div class="jm-foto">
+        <img src="./imgs/Bez názvu-3.png" alt= "portrét šťastného zákazníka">
+        <h4>Jan Novák</h4>
+        </div>
+        <p>Snad nikdy jsem se ještě nesetkal s lepším produktem. Díky Adventure Book jsem mnohem odvážnější. Probudil ve mě znovu chuť do života a touhu objevovat.</p>
+    </div>
+    <div class="vyjadreni">
+        <div class="jm-foto">
+        <img src="./imgs/dzicko.png" alt= "portrét šťastného zákazníka">
+        <h4>Petr Kolář</h4>
+        </div>
+        <p>Můžu tento produkt jen doporučit, používám ho už deset let a pořád slouží. Navíc s věkem dostává patinu, která designu dodává na estetičnu. Mám rád řemeslně kvalitní produkty.</p>
+    </div>
+    <div class="vyjadreni">
+        <div class="jm-foto">
+        <img src="./imgs/zenska.png" alt= "portrét šťastného zákazníka">
+        <h4>Jana Spořílková</h4>
+          </div>
+        <p>Myslím si, že tento produkt je skvělá investice. Potom, co jsem si ho koupila jsem neodolala a koupila si i akcie této firmy, je to úžasné!</p>
+    </div>
+    <i class="fas fa-angle-double-right"></i>
+    </div>
+</div>
+<div class="kontakt">
+    <h2>Kontaktujte nás</h2>
+    <form class="kontaktujte desktopK">
+        <textarea name="message" rows="10" cols="30" required>
+            Napište nám, co máte na srdci!
+        </textarea><br>
+        <div class="name-mail">
+        <div class="name"><label for="name">Jméno:</label><br>
+            <input type="text" name="name" id="name" placeholder="Jméno" required></div>
+        <div class="mail"><label for="mail">E-mail:</label><br>
+         <input type="email" name="mail" id="mail" placeholder="Váš mail" required></div>
+         <button class="secondary">Odeslat</button>
+        </div>
+    </form>
+    <div class = "mobilniKontakt">
+        <a href="#"><i class="fab fa-facebook-messenger"></i></a>
+    </div>
+</div>
+    </body>
+    <footer>
+        <ul class = "desktop" id="myLinks">
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="#">E-shop</a></li>
+            <li><a href="#">Kontakt</a></li>
+
+        </ul>
+
+        <div class="adresa">
+            <p>Rašínovo náměstí 458/9, Horní Lhota, 134 90 <span>tel.č.: 604 678 023</span></p>
+
+        </div>
+    </footer>
+
+</html>
