@@ -552,7 +552,7 @@ button {
     
     .fa-angle-double-right {
 
-       margin-left: 250px;
+       left: 250px;
     
     
     }
@@ -575,9 +575,6 @@ button {
         font-size: 0.7rem;
     }
 
-    .galerie img {
-        filter: grayscale(0%);
-    }
     
 }
 
