@@ -136,7 +136,7 @@ nav a, footer a {
     left: 50%;
     background-color: hsla(23, 7%, 48%, 0.2) ;
     padding: 30px;
-    backdrop-filter: blur(2rem);
+    backdrop-filter: blur(0.5rem);
 }
 
 .moznosti {
@@ -486,8 +486,7 @@ button {
         padding: 15px;
         width: 50%;
         left: 290px;
-        background-color: hsla(0, 7%, 90%, 0.3) ;
-        backdrop-filter: blur(0.5rem);
+        background-color: hsla(0, 7%, 90%, 0.9) ;
     }
     .vyhody {
         margin-top: 20%;
@@ -553,13 +552,13 @@ button {
     
     .fa-angle-double-right {
 
-       margin-left: 70%;
+       margin-left: 65%;
     
     
     }
     
     .fa-angle-double-left {
-        margin-left: 0%;
+        margin-left: -5%;
     }
     .zakaznici {
         display: flex;
@@ -574,6 +573,10 @@ button {
     }
     .zakaznici{
         font-size: 0.7rem;
+    }
+
+    .galerie img {
+        filter: filter: grayscale(0%);
     }
     
 }
