@@ -267,7 +267,7 @@ button.secondary:hover {
 }
 
 .fa-angle-double-right {
-   margin-left: 75%;
+   margin-left: 85%;
 
 
 }
@@ -552,7 +552,8 @@ button {
     
     .fa-angle-double-right {
 
-       margin-right: -200px;
+       left: -50px;
+       overflow: hidden;
     
     
     }
