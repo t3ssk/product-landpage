@@ -565,6 +565,7 @@ button {
         overflow-x: auto;
         justify-content: flex-start;
         width: 100%;
+        margin-left: -15px;
     }
     .jm-foto .foto {
         width: 30%;
