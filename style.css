@@ -552,7 +552,7 @@ button {
     
     .fa-angle-double-right {
 
-       margin-left: 0;
+       margin-left: -50px;
     
     
     }
@@ -565,7 +565,7 @@ button {
         overflow-x: auto;
         justify-content: flex-start;
         width: 100%;
-        margin-left: 35px;
+        margin-left: 5px;
     }
     .jm-foto .foto {
         width: 30%;
