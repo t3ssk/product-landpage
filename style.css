@@ -552,7 +552,7 @@ button {
     
     .fa-angle-double-right {
 
-       justify-self: end;
+       margin-left: 0;
     
     
     }
@@ -576,6 +576,7 @@ button {
     }
 
     
+
 }
 
 
